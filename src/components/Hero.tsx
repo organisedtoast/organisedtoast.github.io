@@ -27,14 +27,14 @@ const Hero = () => {
             Investment Research Automation Consultant
           </p>
           <p className="text-muted-foreground max-w-lg mb-8">
-            I infuse AI processes neatly into the existing workflows of family offices and fundamentally driven equity fund managers, empowering decisionmakers to <strong className="text-foreground font-semibold">spend more time on what really matters</strong>.
+            I infuse AI processes into the existing workflows of family offices and fundamentally driven equity fund managers, empowering investment decisionmakers with <strong className="text-foreground font-semibold">more time on what really matters</strong>.
           </p>
 
           {/* Social Links */}
           <div className="flex gap-4 justify-center md:justify-start">
-            <SocialLink href="https://github.com" icon={<Github />} label="GitHub" />
+            <SocialLink href="https://github.com/organisedtoast" icon={<Github />} label="GitHub" />
             <SocialLink href="https://linkedin.com" icon={<Linkedin />} label="LinkedIn" />
-            <SocialLink href="https://twitter.com" icon={<Twitter />} label="Twitter" />
+            <SocialLink href="https://x.com/organisedtoast" icon={<Twitter />} label="Twitter" />
             <SocialLink href="mailto:organisedtoast@pm.me" icon={<Mail />} label="Email" />
           </div>
         </div>
