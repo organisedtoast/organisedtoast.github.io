@@ -18,5 +18,5 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-base: '//organisedtoast.github.io//'
+base: '/organisedtoast.github.io/'
 }));
