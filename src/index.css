@@ -1,45 +1,53 @@
+/* IMPORT FONTS FROM GOOGLE FONTS */
+/* Loads Space Grotesk and Inter fonts with specific weights for the design system */
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap');
 
+/* TAILWIND CSS LAYERS */
+/* Initialize Tailwind's base styles, components, and utilities */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Developer Portfolio Design System - Warm & Playful */
+/* DEVELOPER PORTFOLIO DESIGN SYSTEM - WARM & PLAYFUL THEME */
+/* Custom CSS variables define the color palette for light and dark modes */
 
+/* BASE LAYER - COLOR VARIABLES */
+/* Defines CSS custom properties for the design system colors */
 @layer base {
   :root {
     /* Warm cream background with toast-inspired accents */
-    --background: 40 33% 98%;
-    --foreground: 30 10% 15%;
+    --background: 40 33% 98%;      /* Main background color */
+    --foreground: 30 10% 15%;      /* Main text color */
 
-    --card: 40 30% 96%;
-    --card-foreground: 30 10% 15%;
+    --card: 40 30% 96%;            /* Card background color */
+    --card-foreground: 30 10% 15%; /* Card text color */
 
-    --popover: 40 30% 96%;
-    --popover-foreground: 30 10% 15%;
+    --popover: 40 30% 96%;         /* Popover background color */
+    --popover-foreground: 30 10% 15%; /* Popover text color */
 
     /* Warm amber primary */
-    --primary: 32 95% 44%;
-    --primary-foreground: 40 33% 98%;
+    --primary: 32 95% 44%;         /* Primary accent color */
+    --primary-foreground: 40 33% 98%; /* Text on primary background */
 
-    --secondary: 35 30% 90%;
-    --secondary-foreground: 30 10% 25%;
+    --secondary: 35 30% 90%;       /* Secondary background color */
+    --secondary-foreground: 30 10% 25%; /* Secondary text color */
 
-    --muted: 35 20% 92%;
-    --muted-foreground: 30 10% 45%;
+    --muted: 35 20% 92%;           /* Muted background color */
+    --muted-foreground: 30 10% 45%; /* Muted text color */
 
-    --accent: 32 80% 50%;
-    --accent-foreground: 40 33% 98%;
+    --accent: 32 80% 50%;          /* Accent color */
+    --accent-foreground: 40 33% 98%; /* Text on accent background */
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 84.2% 60.2%;  /* Error/destructive color */
+    --destructive-foreground: 210 40% 98%; /* Text on destructive background */
 
-    --border: 35 20% 88%;
-    --input: 35 20% 88%;
-    --ring: 32 95% 44%;
+    --border: 35 20% 88%;          /* Border color */
+    --input: 35 20% 88%;           /* Input field border/background */
+    --ring: 32 95% 44%;            /* Focus ring color */
 
-    --radius: 0.75rem;
+    --radius: 0.75rem;             /* Default border radius */
 
+    /* Sidebar specific colors */
     --sidebar-background: 40 30% 96%;
     --sidebar-foreground: 30 10% 25%;
     --sidebar-primary: 32 95% 44%;
@@ -50,35 +58,38 @@
     --sidebar-ring: 32 95% 44%;
   }
 
+  /* DARK MODE COLORS */
+  /* Overrides color variables when in dark mode */
   .dark {
-    --background: 30 15% 8%;
-    --foreground: 40 20% 95%;
+    --background: 30 15% 8%;       /* Dark background color */
+    --foreground: 40 20% 95%;      /* Light text color in dark mode */
 
-    --card: 30 15% 12%;
-    --card-foreground: 40 20% 95%;
+    --card: 30 15% 12%;            /* Dark card background */
+    --card-foreground: 40 20% 95%; /* Light text on dark cards */
 
-    --popover: 30 15% 12%;
-    --popover-foreground: 40 20% 95%;
+    --popover: 30 15% 12%;         /* Dark popover background */
+    --popover-foreground: 40 20% 95%; /* Light text on dark popovers */
 
-    --primary: 32 90% 50%;
-    --primary-foreground: 30 15% 8%;
+    --primary: 32 90% 50%;         /* Adjusted primary color for dark mode */
+    --primary-foreground: 30 15% 8%; /* Dark text on primary in dark mode */
 
-    --secondary: 30 15% 18%;
-    --secondary-foreground: 40 20% 90%;
+    --secondary: 30 15% 18%;       /* Dark secondary background */
+    --secondary-foreground: 40 20% 90%; /* Light secondary text in dark mode */
 
-    --muted: 30 15% 18%;
-    --muted-foreground: 35 15% 60%;
+    --muted: 30 15% 18%;           /* Dark muted background */
+    --muted-foreground: 35 15% 60%; /* Medium gray text in dark mode */
 
-    --accent: 32 80% 55%;
-    --accent-foreground: 30 15% 8%;
+    --accent: 32 80% 55%;          /* Adjusted accent color for dark mode */
+    --accent-foreground: 30 15% 8%; /* Dark text on accent in dark mode */
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;  /* Adjusted destructive color for dark mode */
+    --destructive-foreground: 210 40% 98%; /* Light text on destructive in dark mode */
 
-    --border: 30 15% 20%;
-    --input: 30 15% 20%;
-    --ring: 32 90% 50%;
+    --border: 30 15% 20%;          /* Darker border color */
+    --input: 30 15% 20%;           /* Darker input color */
+    --ring: 32 90% 50%;            /* Adjusted focus ring for dark mode */
 
+    /* Dark mode sidebar colors */
     --sidebar-background: 30 15% 10%;
     --sidebar-foreground: 40 20% 90%;
     --sidebar-primary: 32 90% 50%;
@@ -90,33 +101,44 @@
   }
 }
 
+/* BASE LAYER - GLOBAL STYLES */
+/* Applies consistent styles across all elements */
 @layer base {
+  /* Apply border color to all elements */
   * {
     @apply border-border;
   }
 
+  /* Body styles - sets background, text color, font, and anti-aliasing */
   body {
     @apply bg-background text-foreground font-body antialiased;
   }
 
+  /* Heading styles - applies consistent font family, weight, and tracking */
   h1, h2, h3, h4, h5, h6 {
     @apply font-heading font-semibold tracking-tight;
   }
 }
 
+/* COMPONENT LAYER - REUSABLE CLASSES */
+/* Defines custom utility classes for common UI patterns */
 @layer components {
+  /* Section container - centers content with max width and consistent padding */
   .section-container {
     @apply max-w-4xl mx-auto px-6 py-16 md:py-24;
   }
 
+  /* Gradient text - creates gradient-colored text effect */
   .gradient-text {
     @apply bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent;
   }
 
+  /* Card hover effect - adds subtle animation on hover */
   .card-hover {
     @apply transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
   }
 
+  /* Underline link effect - creates animated underline on hover */
   .link-underline {
     @apply relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-primary after:transition-all after:duration-300 hover:after:w-full;
   }

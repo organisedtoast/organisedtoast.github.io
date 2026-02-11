@@ -8,13 +8,13 @@
 
 There are several ways of editing your application.
 
-**Use Lovable**
+### Use Lovable
 
 Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
 
 Changes made via Lovable will be committed automatically to this repo.
 
-**Use your preferred IDE**
+### Use your preferred IDE
 
 If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
 
@@ -36,13 +36,13 @@ npm i
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+### Edit a file directly in GitHub
 
 - Navigate to the desired file(s).
 - Click the "Edit" button (pencil icon) at the top right of the file view.
 - Make your changes and commit the changes.
 
-**Use GitHub Codespaces**
+### Use GitHub Codespaces
 
 - Navigate to the main page of your repository.
 - Click on the "Code" button (green button) near the top right.
@@ -54,11 +54,11 @@ npm run dev
 
 This project is built with:
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+- Vite - A fast build tool and development server
+- TypeScript - A typed superset of JavaScript
+- React - A JavaScript library for building user interfaces
+- shadcn-ui - A collection of accessible, reusable React components
+- Tailwind CSS - A utility-first CSS framework
 
 ## How can I deploy this project?
 
