@@ -1,7 +1,7 @@
-// About component - displays information about the developer and their skills
+/* About component - displays information about the developer and their skills */
 const About = () => {
   return (
-    // Section element with ID "about" for navigation and styling
+    /* Section element with ID "about" for navigation and styling */
     <section id="about" className="section-container">
       {/* Title for the about section */}
       <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
@@ -21,13 +21,13 @@ const About = () => {
         <div className="mt-12">
           {/* Title for the skills section */}
           <h3 className="text-xl font-semibold mb-6 text-center">Technologies I Work With</h3>
-          
+
           {/* Flex container for skill badges - wraps on smaller screens */}
           <div className="flex flex-wrap justify-center gap-3">
             {/* Map through the skills array and render each skill as a badge */}
             {skills.map((skill) => (
               <span
-                key={skill}  // Unique key for React's reconciliation algorithm
+                key={skill}  /* Unique key for React's reconciliation algorithm */
                 className="px-4 py-2 bg-card rounded-full border border-border text-sm font-medium hover:border-primary hover:text-primary transition-colors duration-300"
               >
                 {skill}
@@ -40,11 +40,11 @@ const About = () => {
   );
 };
 
-// ========================================
-// SKILLS DATA ARRAY
-// This array contains all the skills displayed on the page
-// Edit your skills here - add, remove, or modify skills
-// ========================================
+/* ========================================
+SKILLS DATA ARRAY
+This array contains all the skills displayed on the page
+Edit your skills here - add, remove, or modify skills
+======================================== */
 const skills = [
   "React",
   "TypeScript",
@@ -59,5 +59,5 @@ const skills = [
   "Slack",
 ];
 
-// Export the About component as default for use in other parts of the application
+/* Export the About component as default for use in other parts of the application */
 export default About;

@@ -1,10 +1,10 @@
-// Import external link and GitHub icons from lucide-react library
+/* Import external link and GitHub icons from lucide-react library */
 import { ExternalLink, Github } from "lucide-react";
 
-// Main Projects component - renders a section displaying portfolio projects
+/* Main Projects component - renders a section displaying portfolio projects */
 const Projects = () => {
   return (
-    // Section element with ID "projects" for navigation and styling
+    /* Section element with ID "projects" for navigation and styling */
     <section id="projects" className="section-container bg-card/50">
       {/* Title for the projects section */}
       <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
@@ -26,16 +26,16 @@ const Projects = () => {
   );
 };
 
-// Define the interface for ProjectCard props - specifies the expected data structure
+/* Define the interface for ProjectCard props - specifies the expected data structure */
 interface ProjectCardProps {
-  title: string;      // Project title
-  description: string; // Project description
-  tags: string[];     // Array of technology tags associated with the project
-  liveUrl: string;    // URL to the live demo of the project
-  githubUrl: string;  // URL to the GitHub repository of the project
+  title: string;      /* Project title */
+  description: string; /* Project description */
+  tags: string[];     /* Array of technology tags associated with the project */
+  liveUrl: string;    /* URL to the live demo of the project */
+  githubUrl: string;  /* URL to the GitHub repository of the project */
 }
 
-// Individual project card component - displays project details in a card format
+/* Individual project card component - displays project details in a card format */
 const ProjectCard = ({ title, description, tags, liveUrl, githubUrl }: ProjectCardProps) => (
   <div className="bg-background rounded-xl border border-border p-6 card-hover">
     {/* Project title */}
@@ -61,8 +61,8 @@ const ProjectCard = ({ title, description, tags, liveUrl, githubUrl }: ProjectCa
       {/* Link to live demo of the project */}
       <a
         href={liveUrl}
-        target="_blank"           // Opens link in a new tab
-        rel="noopener noreferrer" // Security measure for external links
+        target="_blank"           /* Opens link in a new tab */
+        rel="noopener noreferrer" /* Security measure for external links */
         className="flex items-center gap-2 text-sm text-primary hover:underline"
       >
         <ExternalLink size={16} /> Live Demo
@@ -70,8 +70,8 @@ const ProjectCard = ({ title, description, tags, liveUrl, githubUrl }: ProjectCa
       {/* Link to GitHub repository of the project */}
       <a
         href={githubUrl}
-        target="_blank"           // Opens link in a new tab
-        rel="noopener noreferrer" // Security measure for external links
+        target="_blank"           /* Opens link in a new tab */
+        rel="noopener noreferrer" /* Security measure for external links */
         className="flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
       >
         <Github size={16} /> Code
@@ -80,11 +80,11 @@ const ProjectCard = ({ title, description, tags, liveUrl, githubUrl }: ProjectCa
   </div>
 );
 
-// ========================================
-// PROJECT DATA ARRAY
-// This array contains all the project information displayed on the page
-// Edit your projects here - add, remove, or modify project details
-// ========================================
+/* ========================================
+PROJECT DATA ARRAY
+This array contains all the project information displayed on the page
+Edit your projects here - add, remove, or modify project details
+======================================== */
 const projects: ProjectCardProps[] = [
   {
     title: "Project One",
@@ -116,5 +116,5 @@ const projects: ProjectCardProps[] = [
   },
 ];
 
-// Export the Projects component as default for use in other parts of the application
+/* Export the Projects component as default for use in other parts of the application */
 export default Projects;

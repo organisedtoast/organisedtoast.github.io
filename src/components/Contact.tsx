@@ -1,10 +1,10 @@
-// Import icons from lucide-react library for use in the contact form
+/* Import icons from lucide-react library for use in the contact form */
 import { Mail, MapPin, Send } from "lucide-react";
 
-// Contact component - displays contact information and a call-to-action button
+/* Contact component - displays contact information and a call-to-action button */
 const Contact = () => {
   return (
-    // Section element with ID "contact" for navigation and styling
+    /* Section element with ID "contact" for navigation and styling */
     <section id="contact" className="section-container">
       {/* Title for the contact section */}
       <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
@@ -29,7 +29,7 @@ const Contact = () => {
             <div>
               <p className="text-sm text-muted-foreground">Email</p>
               <a
-                href="mailto:organisedtoast@pm.me"  // Opens default email client
+                href="mailto:organisedtoast@pm.me"  /* Opens default email client */
                 className="font-medium hover:text-primary transition-colors"
               >
                 organisedtoast@pm.me
@@ -53,16 +53,16 @@ const Contact = () => {
 
         {/* Call-to-action button - sends user to email client */}
         <a
-          href="mailto:organisedtoast@pm.me"       // Opens default email client
+          href="mailto:organisedtoast@pm.me"       /* Opens default email client */
           className="w-full flex items-center justify-center gap-2 bg-primary text-primary-foreground py-4 px-6 rounded-lg font-semibold hover:opacity-90 transition-opacity"
         >
-          <Send size={18} />                      // Send icon from lucide-react
-          Send Me a Message                       // Button text
+          <Send size={18} />                      /* Send icon from lucide-react */
+          Send Me a Message                       /* Button text */
         </a>
       </div>
     </section>
   );
 };
 
-// Export the Contact component as default for use in other parts of the application
+/* Export the Contact component as default for use in other parts of the application */
 export default Contact;
