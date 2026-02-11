@@ -69,9 +69,11 @@ const SocialLink = ({ href, icon, label }: SocialLinkProps) => (
     aria-label={label}                    /* Accessibility attribute for screen readers */
     className="w-12 h-12 rounded-full bg-card border border-border flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary transition-all duration-300 hover:shadow-md"
   >
-    {icon}                                /* Displays the social media icon */
+    {icon}                                 {/* Displays the social media icon */}
   </a>
 );
+
+
 
 /* Export the Hero component as default for use in other parts of the application */
 export default Hero;
