@@ -35,7 +35,7 @@ const Navbar = () => {
                 href={link.href} /* URL for the navigation link */
                 className="text-muted-foreground hover:text-foreground link-underline transition-colors"
               >
-                {link.label}     /* Display text for the navigation link */
+                {link.label}     {/* Display text for the navigation link */}
               </a>
             ))}
           </div>

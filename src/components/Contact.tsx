@@ -56,8 +56,8 @@ const Contact = () => {
           href="mailto:organisedtoast@pm.me"       /* Opens default email client */
           className="w-full flex items-center justify-center gap-2 bg-primary text-primary-foreground py-4 px-6 rounded-lg font-semibold hover:opacity-90 transition-opacity"
         >
-          <Send size={18} />                      /* Send icon from lucide-react */
-          Send Me a Message                       /* Button text */
+          <Send size={18} />                      {/* Send icon from lucide-react */}
+          Send Me a Message                       {/* Button text */}
         </a>
       </div>
     </section>
